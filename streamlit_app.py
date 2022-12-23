@@ -13,6 +13,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 #Set the picker to choose from the Fruit column not the UID column
+#Fruit column became the UID for the table
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 #Fruit Picker
