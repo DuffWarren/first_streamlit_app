@@ -25,4 +25,4 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #display the table in the frame
 streamlit.dataframe(fruits_to_show)
 
-streamlit.dataframe(my_fruit_list)
+#streamlit.dataframe(my_fruit_list)
