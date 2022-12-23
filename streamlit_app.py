@@ -14,17 +14,17 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 #Set the picker to choose from the Fruit column not the UID column
 #Fruit column became the UID for the table
-#my_fruit_list = my_fruit_list.set_index('Fruit')
+my_fruit_list = my_fruit_list.set_index('Fruit')
 
 #Fruit Picker
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 # Pick list to pick fruit desired
-#ruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
-#ruits_to_show = my_fruit_list.loc[fruits_selected]
+Fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+Fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 streamlit.dataframe(my_fruit_list)
 
 #display the table in the frame
-#treamlit.dataframe(fruits_to_show)
+streamlit.dataframe(fruits_to_show)
 
 
