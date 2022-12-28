@@ -31,7 +31,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #display the table in the frame
 streamlit.dataframe(fruits_to_show)
-streamlit.text(fruityvice_response)
+# streamlit.text(fruityvice_response)
 
 streamlit.header("Fruityvice Fruit Advice!")
 import requests
