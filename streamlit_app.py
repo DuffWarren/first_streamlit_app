@@ -2,6 +2,7 @@ import streamlit
 import pandas
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+import snowflake.connector
 
 
 streamlit.title('My Parents New Healthy Diner')
