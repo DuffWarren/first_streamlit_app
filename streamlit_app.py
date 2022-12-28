@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
 
 streamlit.title('My Parents New Healthy Diner')
@@ -35,7 +35,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 #streamlit.text(fruityvice_response.json())
 # normalize the ugly text
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
