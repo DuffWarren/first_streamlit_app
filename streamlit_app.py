@@ -60,4 +60,4 @@ streamlit.write('The user entered ', fruit_choice_2)
 
 Streamlit.write('Thanks for adding ', add_my_fruit)
 # below will not work due to flow control issues
-my_cur.execute("INSERT INTO fruit_load_list VALUES ('from streamlit'))
+my_cur.execute("INSERT INTO fruit_load_list VALUES ('from streamlit')")
